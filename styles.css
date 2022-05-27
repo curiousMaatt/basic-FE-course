@@ -19,6 +19,7 @@ h2{
     font-family: Montserrat Medium;
 }
 
-ul, p {
+ul{
     font-family: Montserrat Light;
+    list-style: none;
 }
