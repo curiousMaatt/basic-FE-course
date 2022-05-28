@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin-left: 360px;
+    margin-right: 360px;
+}
+
+h1 {
+    font-family: Playfair Display;
+}
+
+h2 {
+    font-family: Roboto;
+    font-weight: 700;
+}
+
+p, ul {
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+.picture1 {
+    height: 260px;
+}
+
+.lastParagraph {
+    margin: 0px;
+}
+
+.lastTittle{
+    margin-block-end: 0.10em;
+}
+
+ul {
+    margin-block-start: 0.10em;
+}
