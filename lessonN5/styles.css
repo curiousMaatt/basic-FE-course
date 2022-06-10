@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    font-family: Roboto;
+    background-color: #2C2C2C;
+    color: #FEFEFE;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tableN1{
+    height: 188px;
+    width: 798px;
+    font-size: 0.8rem;
+}
+
+.table{
+    border: 1px solid #787878;
+    border-radius: 0.4rem;
+    margin-top: 2em;
+    /* for rounded border */
+}
+
+.table-header, .tableN1-row-1, .tableN1-row-2 {
+    border-bottom: 1px solid #787878;
+}
+
+.table-header{
+    height: 47px;
+}
+
+.tableN1-row-Head {
+    font-weight: 700;
+}
+
+.icon-more-files {
+    margin-left: 0.7em;
+}
+
+.tableN1-row-date{
+    color:#787878;
+}
+
+.tribar{
+    padding-right: 2em;
+    vertical-align: middle;
+}
+
+.tableN1-row-Head-Name, .tableN1-row-Head-Date, .tableN1-row-File, .tableN1-row-date{
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 2em;
+    width: 399px;
+}
+
+.icon-active {
+    vertical-align: middle;
+    padding-right: 1em;
+}
+
+input {
+   margin-left: -.1em ;
+}
+
+.icon-busket{
+    vertical-align: middle;
+    padding-right: 0.8em;
+    padding-bottom: .2em;
+}
+
+.tableN1-row-Head-Date3, .tableN1-row-date3{
+    padding-left: 3em;
+}
+
+.search-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6px;
+    padding-bottom: 0.5em;
+}
+
+.search-bar{
+    padding: .7em 0.4em;
+    border: 1px solid #444444;
+    border-radius: 0.4em;
+    background-color: #444444;
+    z-index: 3;
+    margin-right: -3.1em;
+}
+
+input[type=text]{
+    background-color: none;
+    border: none;
+    outline: none;
+    background-color: #444444;
+    color: #A2A2A2;
+}
+
+.search-icon{
+    margin-left: 0.7em;
+}
+
