@@ -1,0 +1,997 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+body {
+    font-family: Montserrat;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+a{
+    color:#111111;
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    height: 110px;
+
+    display: grid;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 0.1fr);
+    gap: 5em;
+    position: relative;
+    z-index: 4;
+}
+
+nav>ul {
+    width: 410px;
+    height: 100%;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+}
+
+.pages {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111111;
+}
+
+.pages-active {
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+}
+
+.Gmail-block>a, .phonecall-block>a{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.header-contacts{
+    width: 540px;
+    height: 100%;
+
+    display: grid;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 0.1fr);
+    gap: 3em;
+}
+
+.Gmail-block, .phonecall-block {
+    width: 180px;
+    height: 40px;
+
+    display: grid;
+    grid-template-columns: 3em 10em;
+
+    align-items: center;
+    align-content: center;
+}
+
+.gmail-Img, .phone-Img {
+    margin-right: 1em;
+}
+
+.Gmail-block {
+    margin-left: 1em;
+}
+
+.phonecall-block {
+    width: 187px;
+}
+
+.btn-order-call, .btn-variants {
+    width:max-content;
+    padding: 1em 1.9em;
+    border-radius: 2.2em;
+    background: linear-gradient(90deg, rgba(255,122,0,1) 0%, rgba(255,176,57,1) 100%);
+    box-shadow: 0em .2em 1.1em 0em #FF7A00;
+
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.hero{
+    width: 100%;
+    height: 580px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+}
+
+.left-Col{
+    width: 400px;
+    height: 420px;
+    
+    display: grid;
+    grid-template-rows: repeat(3, 5.8em);
+    align-items: center;
+}
+
+.left-Col>h1 {
+    font-weight: 800;
+    font-size: 2.4rem;
+    line-height: 1.2em;
+}
+
+.left-Col>p {
+    font: 400;
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+.btn-variants { 
+    margin-top: 0.4em;
+}
+
+.flat-Img {
+    position: absolute;
+    left: 37.9em;
+    top: 7.8em;
+    z-index: 3;
+    margin-right: -5em;
+}
+
+.blue-block-Img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 48.2em;
+}
+
+
+.service-card {
+    height: 260px;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 21.8em);
+    
+    justify-items:stretch;
+    align-items: center;
+
+    margin-bottom: 5em;
+}
+
+.card {
+    width: 19.8em;
+    height: 14em;
+
+    display: grid;
+    grid-template-rows: repeat(2, 80px);
+    padding-top: 1em;
+    
+    align-content: center;
+
+    justify-items: center;
+    align-items: center;
+
+    border-radius: 0.6em;
+    background-color: #FFFFFF;
+    text-align: center;
+    box-shadow: 0em 0.6em 1.2em 0em rgba(17, 17, 17, 0.3);
+}
+
+.card>p {
+    width: 15em;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2em;
+}
+
+.flats {
+    height: 800px;
+}
+ 
+.flats-heading {
+    font-weight: 800;
+    font-size: 2.2rem;
+    line-height: 1.2em;
+    color: #2B7AF1;
+
+    margin-bottom: 1.2em;
+}
+
+.flats-cards {
+    width: 100%;
+    height: 580px;
+
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: repeat(2, 15.4em);
+
+    grid-template-areas: 
+    "first first first first second second second"
+    "third third third fourth fourth fourth fourth";
+    gap: 1em;
+}
+
+.One-room-flat, .Three-room-flat, .Two-room-flat, .Five-room-flat {
+    padding: 2em;
+    background-color: rgba(17, 17, 17, 0.5);
+}
+
+.One-room-flat {
+    grid-area: first;
+    background-image: url("images/OneRoomFlat.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.One-room-flat:before {
+    content: '';
+    left: 0;
+    right: 0;
+    margin-top: -2em;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(17, 17, 17, 0.5);
+    z-index: -1;
+}
+
+
+.cards-heading, .cards-price, .cards-address, .cards-address-smaller, .btn-cards-details {
+    z-index: 4;
+    color: #FFFFFF;
+}
+
+.cards-heading {
+    font-weight: 800;
+    font-size: 1.4rem;
+    line-height: 1.2em;
+
+    margin-top: 2.6em;
+    margin-bottom: 1.8em;
+}
+
+.cards-price {
+    font-weight: 400;
+    font-size: 1rem;
+
+    margin-bottom: 0.2em;
+}
+
+.cards-price>span {
+    font-weight: 800;
+    margin-left: .6em;
+}
+
+.cards-address {
+    width: 100%;
+    height: 50px;
+
+    display: grid;
+    grid-template-columns: 300px auto;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards-address-smaller{
+    width: 100%;
+    height: 50px;
+
+    display: grid;
+    grid-template-columns: 140px auto;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location {
+    width: 100%;
+    height: 50px;
+
+    display: grid;
+    grid-template-columns: 30px 220px;
+
+    align-items: center;
+}
+
+.btn-cards-details {
+    width:max-content;
+    padding: 0.6em 1.5em;
+    border-radius: 2.2em;
+    background: linear-gradient(90deg, rgba(255,122,0,1) 0%, rgba(255,176,57,1) 100%);
+
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+
+    transition: ease 500ms;
+}
+.btn-cards-details:hover {
+    box-shadow: 0em .1em 0.5em 0em #FF7A00;
+}
+
+.Three-room-flat {
+    grid-area: second;
+
+    background-image: url("images/ThreeRoomFlat.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+    z-index: 1;
+}
+.Three-room-flat:before {
+    content: '';
+    left: 0;
+    right: 0;
+    margin-top: -2em;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(17, 17, 17, 0.5);
+    z-index: -1;
+}
+
+.Two-room-flat {
+    grid-area: third;
+
+    background-image: url("images/TwoRoomFlat.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+    z-index: 1;
+}
+.Two-room-flat:before {
+    content: '';
+    left: 0;
+    right: 0;
+    margin-top: -2em;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(17, 17, 17, 0.5);
+    z-index: -1;
+}
+
+.Five-room-flat {
+    grid-area: fourth;
+
+    background-image: url("images/FiveRoomFlat.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+    z-index: 1;
+}
+.Five-room-flat:before {
+    content: '';
+    left: 0;
+    right: 0;
+    margin-top: -2em;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(17, 17, 17, 0.5);
+    z-index: -1;
+}
+
+.One-room-flat, .Three-room-flat, .Two-room-flat, .Five-room-flat,
+.One-room-flat::before, .Three-room-flat::before, .Two-room-flat::before, .Five-room-flat::before {
+    box-shadow: 0px 10px 20px 0px rgba(17, 17, 17, 0.1);
+    border-radius: 0.8em;
+}
+
+.btn-newApartment{
+    padding: 0.6em 1.4em;
+    border-radius: 2.2em;
+    background: #5CB85C;
+    border: solid .2em #5CB85C;
+
+    font-size: .8rem;
+    font-weight: 600;
+    color: #FFFFFF;
+
+    transition: ease-in 500ms;
+}
+.btn-newApartment:hover {
+    background: none;
+}
+
+.cards-heading-withNewApart {
+    margin-top: 1.9em;
+}
+
+.wrapper-btn-apart {
+    width: 100%;
+
+    display: grid;
+    justify-items:center;
+    justify-content: center;
+}
+
+.btn-all-apartaments {
+    padding: 0.8em 2em;
+    border-radius: 2.2em;
+    background: linear-gradient(90deg, rgba(255,122,0,1) 0%, rgba(255,176,57,1) 100%);
+    box-shadow: 0em 10px 20px 0em rgba(255, 122, 0, 0.2);
+
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+
+}
+
+.about-us {
+    height: 300px;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 24em 10em 10em 10em;
+
+    grid-template-rows: repeat(3, 4.2em);
+
+    grid-template-areas: 
+    "head-article head-article head-article head-article"
+    "article clients reviews flats"
+    "article clients reviews flats" ;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.about-us-heading {
+    grid-area: head-article;
+
+    font-weight: 800;
+    font-size: 2.2rem;
+    color: #2B7AF1;
+
+    justify-items: center;
+}
+
+.about-us-text {
+    grid-area: article;
+
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4em;
+    color: #111111;
+}
+
+.clients-block, .reviews-block, .flats-block {
+    grid-area: clients;
+    
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1em;
+
+    align-content: center;
+    align-items: center;
+}
+
+.clients-block>h1, .reviews-block>h1, .flats-block>h1 {    
+    font-weight: 800;
+    font-size: 2.2rem;
+    color: #2B7AF1;
+}
+
+.clients-block>h1>span, .reviews-block>h1>span, .flats-block>h1>span {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1em;
+    color: #111111;
+}
+
+.reviews-block {
+    grid-area: reviews;
+}
+
+.flats-block {
+    grid-area: flats;
+}
+.hr-style {
+    border: 0;
+    height: .1em;
+    background: #FFFFFF;
+    background-image: linear-gradient(90deg, rgba(255,122,0,1) 0%, rgba(255,176,57,1) 100%);
+
+    position: relative;
+    z-index:-2;
+}
+
+.hr-style:before {
+    content: '';
+    right: 0;
+    width: 50%;
+    height: 100%;
+
+    position: absolute;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    z-index: 1;
+}
+.hr-style:after {
+    content: '';
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+
+    position: absolute;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    z-index: -3;
+}
+
+.contacts {
+    width: 100%;
+    height: 640px;
+
+    margin-top: 4em;
+    margin-bottom: 6em;
+
+
+    display: grid;
+    justify-items:center;
+    justify-content: center;
+    
+    align-items: center;
+}
+
+.contacts-wrapper {
+    width: 100%;
+    height: 430px;
+
+    display: grid;
+
+    grid-template-columns: 18.8em 11.2em 8em 45em ;
+
+    grid-template-rows: repeat(7, 4em);
+
+    grid-template-areas:
+    "heading heading . picture"
+    "location location . picture"
+    "gmail gmail . picture"
+    "number number . picture"
+    ".  .  . picture"
+    "inst sub-Inst sub-Inst picture"
+    "face sub-Face sub-Face picture";
+
+    align-content: center;
+    justify-content: stretch;
+
+    color: #111111;
+}
+
+.contacts-heading, .clients-reviews-mainh {
+    grid-area: heading;
+
+    font-weight: 800;
+    font-size: 2.2rem;
+    color: #2B7AF1;
+}
+
+.contacts-location {
+    grid-area: location;
+}
+
+.contacts-location, .contacts-gmail, .contacts-number, .contacts-inst, 
+.contacts-facebook, .subscribe-inst, .subscribe-facebook {
+    display: grid;
+
+    width: 100%;
+    height: 50px;
+
+    display: grid;
+    grid-template-columns: 3.6em 18em;
+
+    align-items: center;
+    align-content: center;
+
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4em;
+    color: #111111;
+}
+
+.contacts-gmail{
+    grid-area: gmail;
+}
+
+.contacts-number{
+    grid-area: number;
+}
+
+.contacts-inst {
+    grid-area: inst;
+
+}
+.subscribe-inst{
+    grid-area: sub-Inst;
+}
+
+.contacts-facebook {
+    grid-area: face;
+}
+.subscribe-facebook{
+    grid-area: sub-Face;
+}
+
+.map-img {
+    grid-area: picture;
+}
+
+.btn-subscribe { 
+    height: 1em;
+    width: 7em;
+    
+    margin-left: 7em;
+
+    text-align: center;
+
+    padding: 0.6em 1.5em;
+    border-radius: 2.2em;
+    background: linear-gradient(90deg, rgba(255,122,0,1) 0%, rgba(255,176,57,1) 100%);
+    box-shadow: 0em 10px 20px 0em rgba(255, 122, 0, 0.2);
+
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.map-img{
+    border-radius: 0.6em;
+    box-shadow: 0em 10px 20px 0em rgba(17, 17, 17, 0.1);
+}
+
+
+.clients-reviews {
+    width: 99vw;
+    height: 660px;
+    margin-right: 0px;
+    margin-left: -5em;
+
+    background-color: #2B7AF1;
+
+    margin-bottom: 2.4em;
+    padding: 6em;
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+.clients-reviews-mainh {
+    color: #FFFFFF;
+    margin-bottom: 1.6em;
+}
+
+.clients-reviews-cards {
+    height: 292px;
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 41em 41em;
+
+    gap: 1.2em; 
+}
+
+.left-review, .right-review {
+    background-color: #FFFFFF;
+    border-radius: .8em;
+    box-shadow: 0px 10px 20px 0px rgba(17, 17, 17, 0.1);
+
+    z-index: 1;
+}
+
+.left-review, .right-review {
+    padding: 2.4em;
+    box-sizing: border-box;
+
+    display: grid;
+    justify-content: center;
+
+
+    grid-template-columns: 8em 16em 10em;
+    grid-template-rows: 3em 6em 1em 2em;
+
+    grid-template-areas: 
+    "main-comment main-comment stars"
+    "comment-text comment-text comment-text"
+    "person-name person-name person-name"
+    "City . Date";
+    gap: 0.6em;
+}
+
+.review-card-heading {
+    grid-area: main-comment;
+
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #2B7AF1;
+}
+
+.left-review>img{
+    grid-area: stars;
+
+    margin-left: 2.6em;
+}
+
+.right-review>img {
+    grid-area: stars;
+
+    margin-left: 4em;
+}
+
+.review-card-comment {
+    grid-area: comment-text;
+
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4em;
+    color: #111111;
+}
+
+.review-card-person {
+    grid-area: person-name;
+
+    font-weight: 700;
+    font-size: .9rem;
+    color: #2B7AF1;
+}
+
+.review-card-city {
+    grid-area: City;
+
+    font-weight: 400;
+    font-size: .8rem;
+    color: #111111;
+}
+
+.review-card-date {
+    grid-area: Date;
+
+    font-weight: 600;
+    font-size: .9rem;
+    color: #111111;
+
+    display: grid;
+    justify-items: end;
+}
+
+.previous-Ico, .next-Ico{
+    position: absolute;
+
+    z-index: 3;
+    top: 19.2em;
+}
+.previous-Ico{
+    left: 3.6em;
+}
+.next-Ico{
+    right: 3.6em;
+}
+
+.indicator-wrapper{
+    width: 100%;
+    height: 120px;
+
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.quotes-Img {
+    position: absolute;
+
+    z-index: 0;
+    top: 2em;
+    right: 2.6em;
+}
+
+
+.contact-us {
+    height: 660px;
+    width: 100%;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    position: relative;
+
+    margin-bottom: 8em;
+}
+
+.contact-us-block{
+    height: 400px;
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 21.8em 38em;
+    gap: 6em;
+
+}
+
+.left-block{
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    grid-template-rows: 5em 3em 3em 7em 3em;
+
+    padding: 1.6em;
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+    box-shadow: 0px -5px 20px 0px rgba(41, 41, 42, 0.2);
+    border-radius: .6em;
+
+    position: relative;
+    z-index: 2;
+}
+
+.left-block>h1 {
+    font-weight: 800;
+    font-size: 2rem;
+    color: #2B7AF1;
+}
+
+.input-Name, .input-Gmail, textarea {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: .8rem;
+    color: #111111;
+
+    border: 1px solid;
+    border-radius: .4em;
+}
+
+.input-Name, .input-Gmail {
+    width: 18em;
+    height: 2.4em;
+}
+
+textarea {
+    width: 18em;
+    height: 6em;
+
+    resize: none;
+}
+
+textarea:focus, .input-Name:focus , .input-Gmail:focus {
+   outline: none;
+}
+
+.btn-send {
+    padding: 0.8em 1.8em;
+    border-radius: 2.2em;
+    background: linear-gradient(90deg, rgba(255,122,0,1) 0%, rgba(255,176,57,1) 100%);
+    box-shadow: 0em 10px 20px 0em rgba(255, 122, 0, 0.2);
+
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.right-block-paragraph, .right-block>h1 {
+    font-weight: 400;
+    font-size:  1rem;
+    line-height: 1.4rem;
+
+    margin-bottom: 2em;
+}
+
+.right-block-paragraph{
+    margin-top: 2em;
+}
+
+.right-block {
+    z-index: 1;
+}
+
+.right-block>h1 {
+    font-weight: 700;
+    color: #2B7AF1;
+
+    margin-bottom: .6em;
+}
+
+.sub-paragraph {
+    font-size:  .9rem;
+}
+
+.quote-small {
+    position: absolute;
+
+    z-index: 0;
+    top: 7.4em;
+    right: 46.2em;
+}
+
+footer {
+    position: relative;
+    
+}
+
+.footer-elements>nav>ul>li>a, .footer-elements>.Gmail-block>a, .footer-elements>.phonecall-block>a {
+    color: #FFFFFF;
+}
+
+.footer-elements {
+    width: 100%;
+    height: 110px;
+
+    display: grid;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: repeat(5, 0.1fr);
+    gap: 4em;
+    position: relative;
+    z-index: 4;
+}
+
+.socials-icons {
+    width: 186px;
+    height: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 3em);
+    justify-content: center;
+}
+
+.btn-logotype {
+    padding: 1.4em 2em;
+    background-color: #2B7AF1;
+    border-radius: .6em;
+
+    font-weight: 700;
+    color: #FFFFFF;
+
+}
+
+.hr-style2 {
+    border: 0;
+    height: .2em;
+    background: #C4C4C4;
+
+    position: relative;
+    z-index: 2;
+}
+
+.last-block {
+    width: 100%;
+    height: 60px;
+
+    display: grid;
+    grid-template-columns: 24em auto;
+    align-items: center;
+    color: #FFFFFF;
+
+    position: relative;
+    z-index: 2;
+}
+
+.Terms-of-service {
+    margin-left: 8em;
+    color: #FFFFFF;
+}
+
+.footer-Img {
+    z-index: 1;
+
+    position: absolute;
+    width: 99vw;
+
+    left: -5em;
+    top: -25em;
+}
