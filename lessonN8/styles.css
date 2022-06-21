@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.div-block {
+    width: 100%;
+    padding:  10em 0em 10em 0em;
+
+    display: flex;
+    justify-content: center;
+}
+
+.grid-wrapper {
+    width: 300px;
+    height: 440px;
+
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+
+    align-items: center;
+}
+
+.div-default {
+    width: 50px;
+    height: 50px;
+
+    background-color: #DCDBDB;
+}
+
+.div-default:nth-child(21), .div-default:nth-child(22),
+.div-default:nth-child(23), .div-default:nth-child(24) {
+    background-color: #536EFC;
+
+    transition: ease 500ms;
+}
+.div-default:nth-child(21):hover, .div-default:nth-child(22):hover,
+ .div-default:nth-child(24):hover {
+    cursor: pointer;
+    background-color: #3152FF;
+    border-radius:  0.2em;
+}
+
+.div-default:nth-child(4n - 1){
+    background-color: #FC5353;
+
+    transition: ease 500ms;
+}
+.div-default:nth-child(4n - 1):hover {
+    cursor: pointer;
+    background-color: #FF3434;
+    border-radius:  0.2em;
+}
+
+.btn-block {
+    width: 100%;
+
+    padding:  15em 0em 15em 0em;
+
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 1.6em 4.6em;
+
+    font-family: Montserrat;
+    font-size: 1rem;
+
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #44D3A8;
+    border-radius:  2em;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    transition: ease-out 500ms;
+
+    position: relative;
+}
+
+.btn::before, .btn::after {
+    content: " ";
+    width: 9em;
+    height: .4em;
+
+    border-top: .1em solid  #C4C4C4;
+    border-bottom: .1em solid  #C4C4C4;
+    transition: ease 500ms;
+
+    left: -50%;
+    top: 48%;
+    position: absolute;
+
+    transition: ease-in 300ms;
+}
+
+.btn::after  {
+    left: 105%;
+}
+
+.btn:hover {
+    border: .1em solid #44D3A8; 
+    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.25);
+
+    background-color: #FFFFFF;
+    color: #111111;
+}
+
+.btn:hover:before, .btn:hover:after{
+    border-top: .1em solid  #44D3A8;
+    border-bottom: .1em solid #44D3A8;
+    transform: scaleX(0%);
+}
