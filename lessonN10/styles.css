@@ -28,6 +28,7 @@
     background-color: #FFFFFF;
 
     position: absolute;
+    z-index: 1;
 }
 
 .gap-el {
