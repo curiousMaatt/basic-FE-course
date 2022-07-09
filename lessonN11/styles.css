@@ -1,0 +1,111 @@
+:root {
+    --primary-color: #4094EF;
+}
+
+
+.more-padding {
+    padding: 0 9.2em 0 9.2em;
+}
+
+.logoImg { 
+    cursor: pointer;
+    margin-bottom: -.8em;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.page:hover, .more-menu:hover, .about-page:hover,
+.postPic:hover, .tagged-menu-pic:hover, .tagged-menu-text:hover,
+.posts-menu-pic:hover, .posts-menu-text:hover, .historyPic:hover,
+.historyPic-text:hover, .ava-Img:hover, .burger-menu{
+    cursor: pointer;
+}
+
+.input-search {
+    padding: 0.1rem;
+    border-radius: .2em;
+    font-size: .9rem;
+}
+
+.search-form {
+    position: relative;
+}
+
+.SearchIco {
+    position: absolute;
+
+    top: 34%;
+    left: 26%;
+}
+
+.SearchIco {
+    display: none;
+}
+
+.btn-follow {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    height: 2.4em;
+
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.dropDown { 
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    padding-right: 1.1rem;
+    height: 2.1em;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.icon-dd {
+    padding: 0;
+}
+
+.paragraph {
+    font-size: .9rem;
+}
+
+.posts-menu {
+    border-top: 0.1rem solid #262626;
+    margin-top: -.1em;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .postPic {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .more-padding {
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .pagesCol {
+        display: none;
+    }
+
+    .page {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .burger-menu>img {
+        margin-left: 80%;
+    }
+
+}
