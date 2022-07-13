@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+
+$nav-pages: #505F98;
+$nav-pages-footer: #929ECC;
+
+$logo: #37447E;
+
+$heading-text: #091133;
+$article-text: #505F98;
+$basic-paragraph: #6F7CB2;
+$button: #111B47;
+
+$pre-footer: #F3F6FF;
+$footer-bg: #E7ECFF;
+
+@mixin theme-main-btn {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: .9rem;
+
+    padding: .4em 3em;
+    background-color: $button;
+    border-radius: .2em;
+}
+
+@mixin theme-logo {
+    color: $logo;
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+*{
+    font-family: Roboto;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    position: relative;
+    z-index: 3;
+
+    .pages {
+        color: $nav-pages;
+        font-size: .9rem;
+    }
+
+    .btn-logo {
+        margin-left: -16%;
+    }
+
+    .btn-buyNow {
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: .8rem;
+
+        padding: .3em 3em;
+        background-color: $button;
+    }
+}
+
+.burger-menu {
+    display: none
+}
+
+.Landie-logo {
+    @include theme-logo;
+}
+
+.hero {
+
+    .hero-wrapper {
+        position: relative;
+
+        .left-col {
+            z-index: 3;
+
+            padding-top: 11%;
+
+            .hero-heading {
+                color: $heading-text;
+                font-weight: 500;
+                font-size: 3.2rem;
+            }
+
+            .hero-paragraph {
+                color: $article-text;
+                font-size: 1.1rem;
+            }
+
+            .sub-btn {
+                color: $button;
+                font-weight: 500;
+                font-size: .9rem;
+
+                padding: .4em 3em;
+                border: .1rem solid $button;
+                border-radius: .2em;
+            }
+        }
+
+        .right-col {
+            position: relative;
+
+            .hero-img {
+                position: absolute;
+                z-index: 2;
+                left: -39.9%;
+                top: -34%;
+            }
+        }
+    }
+}
+
+.main-btn {
+    @include theme-main-btn;
+}
+
+.first-part {
+    margin-top: 40%;
+    margin-bottom: 12%;
+
+
+    .row {
+
+        .left-col {
+
+            .article {
+                .basic-paragraph {
+                    color: $basic-paragraph;
+                }
+
+            }
+            
+            .sub-heading {
+                color: $heading-text;
+                font-size: 1.1rem;
+            }
+
+            .sub-paragraph {
+                font-size: .8rem;
+                color: #5D6970;
+            }
+        }
+    } 
+}
+
+.basic-heading {
+    color: $heading-text;
+    font-weight: 500;
+
+}
+
+.basic-paragraph {
+    color: $basic-paragraph;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+
+.sub-heading {
+    color: $heading-text;
+    font-size: 1.1rem;
+}
+
+.sub-paragraph {
+    font-size: .8rem;
+    color: #5D6970;
+}
+
+
+.info-part {
+    margin-top: 5%;
+    margin-bottom: 12%;
+
+    .row{
+        .right-col {
+            padding: 3% 0 0 8%;
+        }
+    }
+}
+
+.basic-heading {
+    font-size: 2.2rem;
+}
+
+.info-part-two{
+    .row{
+        .right-col {
+            padding: 6% 0 0 8%;
+        }
+    }
+}
+
+.info-part-three{
+    .row{
+        .right-col {
+            padding: 0 0 0 8%;
+        }
+    }
+}
+
+.pre-footer {
+    margin-top: 28%;
+    margin-bottom: 16%;
+
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+
+        width: 100vw;
+        height: 140vh;
+        top: -69%;
+
+        background-image: url("../pictures/footer-shape.svg");
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center;
+
+    }
+
+    .basic-paragraph {
+        width: 60%;
+    }
+
+    .feature-heading {
+        font-size: 3rem;
+        color: #222F65;
+    }
+    .feauture-info{
+        color: #37447E;
+        font-size: .85rem;
+    }
+
+    .under-btn-text {
+        color: #5D6970;
+        font-size: .8rem;
+
+        margin-bottom: .8em;
+    }
+    
+}
+
+.footer-bg-shape {
+    position: absolute;
+    z-index: -1;
+
+    width: 122%;
+    object-fit: contain;
+
+    top: -66%;
+}
+
+
+.socials-icons:hover {
+    cursor: pointer;
+}
+
+footer {
+    background-color: $footer-bg;
+
+    .container{
+        .d-flex {
+            .watermark {
+                margin-bottom: -.3%;
+                color: #939EA4;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .pre-footer:after {
+        top: -49%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        .hero-paragraph {
+            padding: 0 10% 0 10%;
+        }
+    }
+
+    .first-part {
+        margin-top: 20%;
+    }
+
+    .picture-block {
+        display: flex;
+        justify-content: center;
+
+        margin-bottom: 4%;
+    }
+
+    .info-part-three {
+        .right-col {
+            margin-bottom: 6%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        .top-nav {
+            .pages {
+            display: none;
+            }
+        }
+
+        .btn-logo {
+            .Landie-logo {
+                margin-left: 50%;
+            }
+        }
+    }
+    
+    .burger-menu {
+        display: block;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .first-part {
+        margin-top: 10%;
+        margin-bottom: 22%;
+
+
+        .first-part-pic {
+            margin-bottom: 8%;
+        }
+    }
+
+    .pre-footer:after {
+        top: -39%;
+    }
+    
+}
+
+
+@media screen and (max-width: 576px) {
+    
+    nav {
+        max-width: 95%;
+
+        .btn-logo {
+            .Landie-logo {
+                margin-left: 70%;
+            }
+        }
+
+        .btn-nav {
+            .btn-buyNow {
+                padding: .6em 3.2em;
+
+            }
+        }
+    }
+
+    .hero {
+        .hero-wrapper {
+    
+            .left-col {
+                padding-top: 26%;
+    
+                .hero-heading {
+                    font-size: 2.8rem;
+                }
+    
+                .hero-paragraph {
+                    font-size: 1rem;
+                }
+            }   
+        }
+    }
+
+    .first-part {
+        max-width: 95%;
+
+        .row {
+            .left-col {
+                .article {
+                    .basic-paragraph {
+                        font-size: 1.2rem;
+                    }
+                }
+                
+                .sub-heading {
+                    font-size: 1.2rem;
+                }
+
+                .sub-paragraph {
+                    font-size: 1rem;
+                }
+            }
+
+            .first-part-pic {
+                margin-bottom: 20%;
+                margin-left: -15%;
+            }
+        } 
+    }
+    .info-part {
+        .basic-paragraph {
+            padding-right: 5%;
+            font-size: 1.2rem;
+        }
+    }
+
+    .info-part-two {
+        .info-part-img {
+            margin-bottom: 14%;
+        }
+    }
+
+    .info-part-img {
+        margin-top: 10%;
+    }
+    
+
+    .info-part-three {
+        padding-bottom: 24%;
+    }
+
+    .pre-footer {
+        .basic-paragraph {
+            width: 86%;
+            font-size: 1.2rem;
+        }
+
+        &:after {
+            top: -50%;
+        }
+    }
+
+    .watermark {
+        font-size: .8rem;
+    }
+
+    footer {
+        .container {
+            .first-line {
+                .main-btn {
+                    padding: .3em 1.6em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .btns-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        .main-btn, .sub-btn {
+            margin-left: 24%;
+            width: 50%;
+        }
+
+        .main-btn {
+            margin-bottom: 2%;
+        }
+    }
+}
