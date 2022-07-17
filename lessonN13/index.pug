@@ -1,0 +1,125 @@
+doctype html
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Buttons
+
+    link(rel="stylesheet", href="css/resetStyles.css")
+    link(rel="stylesheet", href="css/main.css")
+body
+    div.wrapper
+        h1 Buttons Big
+
+        .buttons
+            .buttons-line
+                .buttons-line_solo
+                    include includes/buttons-big/type1/btn-primary_big.pug
+                    include includes/buttons-big/type1/btn-secondary_big.pug
+                    include includes/buttons-big/type1/btn-light_big.pug
+                    include includes/buttons-big/type1/btn-light_primary_big.pug
+
+                include includes/buttons-big/grouped/btn_grouped-usage.pug
+
+            .buttons-line
+                .buttons-line_solo
+                    include includes/buttons-big/type2/btn-primary_big.pug
+                    include includes/buttons-big/type2/btn-secondary_big.pug
+                    include includes/buttons-big/type2/btn-light_big.pug
+                    include includes/buttons-big/type2/btn-light_primary_big.pug
+
+                include includes/buttons-big/grouped/btn_grouped-tabs.pug
+                
+            
+            .buttons-line
+                .buttons-line_solo
+                    include includes/buttons-big/type3/btn-primary_big.pug
+                    include includes/buttons-big/type3/btn-secondary_big.pug
+                    include includes/buttons-big/type3/btn-light_big.pug
+                    include includes/buttons-big/type3/btn-light_primary_big.pug
+
+                include includes/buttons-big/grouped/btn_grouped-sizes.pug
+                    
+        h1 Buttons Small
+
+        .buttons
+            .buttons-line
+                .buttons-line_solo
+                    include includes/buttons-small/type1/btn-primary_small.pug
+                    include includes/buttons-small/type1/btn-secondary_small.pug
+                    include includes/buttons-small/type1/btn-light_small.pug
+                    include includes/buttons-small/type1/btn-light_primary_small.pug
+
+                include includes/buttons-small/grouped/btn_grouped-tabs.pug
+                include includes/buttons-small/buttons-search/buttons-search_alert.pug
+                include includes/buttons-small/buttons-search/buttons-search_active.pug
+
+                    
+
+            .buttons-line
+                .buttons-line_solo
+                    include includes/buttons-small/type2/btn-primary_small.pug
+                    include includes/buttons-small/type2/btn-secondary_small.pug
+                    include includes/buttons-small/type2/btn-light_small.pug
+                    include includes/buttons-small/type2/btn-light_primary_small.pug
+
+                include includes/buttons-small/grouped/btn_grouped-usage.pug
+                
+
+            .buttons-line
+                .buttons-line_solo
+                    include includes/buttons-small/type3/btn-primary_small.pug
+                    include includes/buttons-small/type3/btn-secondary_small.pug
+                    include includes/buttons-small/type3/btn-light_small.pug
+                    include includes/buttons-small/type3/btn-light_primary_small.pug
+
+                include includes/buttons-small/grouped/btn_grouped-sizes.pug
+
+        .buttons
+            .tags-line
+                .tags
+                    //- include includes/buttons-small/tags/btn-light-cross.pug
+                    //- include includes/buttons-small/tags/btn-primary-cross.pug
+                    .tag-light_cross
+                        p Tag
+                        svg(width='8', height='8', viewBox='0 0 8 8', fill='none', xmlns='http://www.w3.org/2000/svg')
+                            path.icon-grey(d='M7 7L1 1M7 1L1 7', stroke='black', stroke-width='1.2', stroke-linecap='round')
+                    
+                    .tag-primary_cross
+                        p Tag
+                        svg(width='8', height='8', viewBox='0 0 8 8', fill='none', xmlns='http://www.w3.org/2000/svg')
+                            path.icon-white(d='M7 7L1 1M7 1L1 7', stroke='black', stroke-width='1.2', stroke-linecap='round')
+
+                .tags
+                    .tag-light
+                        p Tag
+                    .tag-primary
+                        p Tag
+                    
+
+                    
+                    
+
+
+
+                
+            
+                
+
+
+
+
+
+
+            
+            
+
+
+
+
+    
+
+
+
+
